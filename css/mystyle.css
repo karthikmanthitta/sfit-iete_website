@@ -1,0 +1,98 @@
+img{ max-width: 100%; height: auto; margin-left:auto; margin-right:auto;display:block }
+#highlight{
+  color:yellow;
+}
+#event_title{
+  color:#28ebe1;
+}
+#myBtn {
+       position: fixed;
+       bottom: 10px;
+       float: right;
+       right: 10.5%;
+       left: 93.25%;
+       max-width: 30px;
+       width: 100%;
+       font-size: 12px;
+       border-color: rgba(85, 85, 85, 0.2);
+       background-color: rgb(100,100,100);
+       padding: 2px;
+       border-radius: 4px;
+
+   }
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+/*On Hover Color Change*/
+   #myBtn:hover {
+       background-color: #7dbbf1;
+   }
+
+body, html {
+  height: 100%;
+  position:fixed;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+}
+#activeclass{
+  text-shadow: 0 0 2px white,0 0 1px white;
+}
+body {
+  margin:0;
+}
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:2s;
+}
+
+.bg3 {
+  animation-duration:2s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:serif;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
